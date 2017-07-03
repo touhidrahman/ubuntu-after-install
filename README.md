@@ -1,9 +1,22 @@
 # UBUNTU AFTER INSTALL
 
 A personal ubuntu after install list by Touhidur Rahman
- 
- 
-## ESSENTIAL REPOS (1-CLICK INSTALL)
+
+### Jump to Section
+* [Essential Repositories](#essential-repos)
+* [Essential Installs](#essential-installs)
+* [Development](#development)
+	* [JDK](#java)
+	* [LAMP Stack](#lamp)
+	* [NodeJS](#nodejs)
+	* [MongoDB](#mongodb)
+* [Multimedia](#multimedia)
+* [Graphics](#graphics)
+* [Internet](#internet)
+* [Utilities](#utilities)
+* [Office](#office)
+
+## ESSENTIAL REPOS (1-CLICK INSTALL)<a name="essential-repos"></a>
 ---
 ### Dev
 `sudo add-apt-repository ppa:webupd8team/atom && sudo add-apt-repository ppa:webupd8team/java && sudo add-apt-repository ppa:nginx/stable && sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make`
@@ -21,7 +34,7 @@ A personal ubuntu after install list by Touhidur Rahman
 `sudo add-apt-repository ppa:libreoffice/ppa`
  
  
-## ESSENTIAL INSTALLS
+## ESSENTIAL INSTALLS<a name="essential-installs" ></a>
 ---
 `sudo apt-get install synaptic ppa-purge curl git build-essentials`
 
@@ -30,7 +43,7 @@ A personal ubuntu after install list by Touhidur Rahman
 `sudo apt install libavcodec-extra`
  
  
-## DEVELOPMENT
+## DEVELOPMENT<a name="development" ></a>
 ---
 ### IDE
 #### SublimeText 3
@@ -46,32 +59,21 @@ A personal ubuntu after install list by Touhidur Rahman
 `sudo chown -R $(whoami) /opt/idea`
 
 
-### Java JDK
-#### From Oracle
+### Java JDK <a name="java" ></a>
+From Oracle
+
 `sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get install oracle-java8-installer`
 
-#### From Ubuntu Repo (Open JDK)
+From Ubuntu Repo (Open JDK)
+
 `sudo apt-get install openjdk-8-jdk`
 
-### KVM
-`sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
-sudo apt-get install virt-manager`
 
 ### Meteor
 `curl https://install.meteor.com/ | sh`
 
-### Composer
-`php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"`
 
-`php -r "if (hash_file('SHA384', 'composer-setup.php') === '669656bab3166a7aff8a7506b8cb2d1c292f042046c5a994c43155c0be6190fa0355160742ab2e1c88d40d5be660b410') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"`
-
-`php composer-setup.php`
-
-`php -r "unlink('composer-setup.php');"`
- 
-`sudo mv composer.phar /usr/local/bin/composer`
- 
 ### Dart
 `sudo apt-get install apt-transport-https`
 
@@ -88,7 +90,7 @@ Set up the location of the stable repository.
 `sudo apt install dart`
 
 
-## LAMP STACK
+## LAMP STACK <a name="lamp" ></a>
 ### MariaDB
 `sudo apt-get -y install mariadb-server mariadb-client`
 
@@ -116,6 +118,17 @@ update user set plugin='' where User='root';
 flush privileges;
 Exit;
 ```
+
+### Composer
+`php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"`
+
+`php -r "if (hash_file('SHA384', 'composer-setup.php') === '669656bab3166a7aff8a7506b8cb2d1c292f042046c5a994c43155c0be6190fa0355160742ab2e1c88d40d5be660b410') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"`
+
+`php composer-setup.php`
+
+`php -r "unlink('composer-setup.php');"`
+ 
+`sudo mv composer.phar /usr/local/bin/composer`
  
 #### Optional
 Install PHP Accelerator
@@ -146,7 +159,7 @@ sudo apt-get update
 sudo apt-get install nginx
 ```
 
-### NodeJS
+### NodeJS <a name="nodejs"></a>
 #### V6-LTS
 `curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
 
@@ -158,7 +171,7 @@ sudo apt-get install nginx
 `sudo apt-get install -y nodejs`
  
  
-### MongoDB
+### MongoDB <a name="mongodb"></a>
 ```
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A14518585931BC711F9BA15703C6
 echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
@@ -167,7 +180,7 @@ sudo apt-get install -y mongodb-org
 sudo service mongod start
 ``` 
  
-## MULTIMEDIA
+## MULTIMEDIA <a name="multimedia"></a>
 ### DVD Playback Essentials
 ```
 sudo apt install libdvd-pkg
@@ -245,7 +258,7 @@ Update _youtube-dl_
 `sudo apt install gradio`
  
  
-## GRAPHICS
+## GRAPHICS <a name="graphics"></a>
 ---
 ### GIMP
 `sudo apt-get install gimp gimp-data gimp-plugin-registry gimp-data-extras`
@@ -262,7 +275,7 @@ Update _youtube-dl_
 
 
  
-## UTILITIES
+## UTILITIES <a name="utilities"></a>
 ---
 `sudo apt-get install ubuntu-restricted-extras`
 
@@ -352,8 +365,13 @@ sudo ufw allow 1714:1764/udp
 sudo ufw allow 1714:1764/tcp
 sudo ufw reload
 ```
- 
-## INTERNET
+
+### KVM
+`sudo apt-get install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+sudo apt-get install virt-manager`
+
+
+## INTERNET <a name="internet"></a>
 ---
 ### Google Chrome
 
@@ -405,7 +423,7 @@ EOF
 `wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/install-papirus-home-kde.sh | sh`
  
  
-## OFFICE
+## OFFICE <a name="office"></a>
 ---
 ### OnlyOffice
 `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys CB2DE8E5`

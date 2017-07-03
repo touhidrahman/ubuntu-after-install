@@ -1,6 +1,6 @@
 # UBUNTU AFTER INSTALL
 
-A personal ubuntu after install list by Touhidur Rahman
+A personal ubuntu after install list by [Touhidur Rahman](http://de.linkedin.com/in/touhidrahman)
 
 ### Jump to Section
 * [Essential Repositories](#essential-repos)

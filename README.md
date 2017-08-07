@@ -422,6 +422,16 @@ sudo apt-get install virt-manager`
 
 `sudo apt-get install google-chrome-stable`
 
+### Vivaldi
+
+`sudo sh -c "echo 'deb http://repo.vivaldi.com/stable/deb/ stable main' >> /etc/apt/sources.list.d/vivaldi.list"`
+
+`wget -O vr.key http://repo.vivaldi.com/stable/linux_signing_key.pub;sudo apt-key add - < vr.key;rm vr.key`
+
+`sudo apt-get update`
+
+`sudo apt-get install vivaldi-stable`
+
 ### Xtreme Download Manager
 `sudo apt-get install xdman`
  
@@ -483,7 +493,7 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.py | 
  
 ### LibreOffice
 ```
-sudo add-apt-repository ppa:libreoffice/libreoffice-5-3
+sudo add-apt-repository ppa:libreoffice/libreoffice-5-4
 sudo apt-get update
 sudo apt-get install libreoffice libreoffice-style-breeze
 ```

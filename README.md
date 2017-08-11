@@ -294,6 +294,12 @@ Update _youtube-dl_
 
 `sudo youtube-dl -U`
 
+Youtube-dl GUI
+
+`sudo add-apt-repository ppa:nilarimogard/webupd8`
+
+`sudo apt update && sudo apt install youtube-dlg`
+
 
 ### Radio
 `sudo add-apt-repository ppa:haecker-felix/gradio-daily`

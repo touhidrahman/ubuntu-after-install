@@ -72,7 +72,7 @@ Full
 
 # LXDE
 
-`sudo apt install lxde`
+`sudo apt install lxde lxde-common`
 
 
 # Cinnamon

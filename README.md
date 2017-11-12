@@ -355,6 +355,17 @@ sudo apt-get install playonlinux winbind
 ### Redshift (Brightness Controll)
 `sudo apt-get install redshift`
 
+
+### uCareSystem
+```
+sudo add-apt-repository ppa:utappia/stable
+sudo apt-get update
+sudo apt install ucaresystem-core
+
+sudo ucaresystem-core
+```
+
+
 ### Power Management
 ```
 sudo add-apt-repository ppa:linrunner/tlp

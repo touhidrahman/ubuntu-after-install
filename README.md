@@ -203,10 +203,6 @@ sudo apt-get install nginx
 ```
 
 ### NodeJS <a name="nodejs"></a>
-#### V6-LTS
-`curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -`
-
-`sudo apt-get install -y nodejs`
 
 #### V8
 `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
@@ -222,6 +218,14 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 sudo service mongod start
 ``` 
+
+### Python 3 with PIP
+```
+sudo apt install python3-setuptools
+sudo easy_install3 pip
+```
+
+
  
 ## MULTIMEDIA <a name="multimedia"></a>
 ### DVD Playback Essentials
